@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+  }
+  
+  /* Recipe Card */
+  .recipe-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .recipe-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .recipe-details {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .toggle-btn, .start-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #71202a;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+  .toggle-btn:hover, .start-btn:hover {
+    background-color: #e17c94;
+  }
+  
+  /* Ingredients & Steps */
+  .hidden {
+    display: none;
+  }
+  
+  .ingredients, .steps {
+    text-align: left;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .ingredients li:hover, .steps li:hover {
+    color: #ff2aa3;
+    cursor: pointer;
+    transition: color 0.4s ease;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    margin: 20px 0;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    width: 0;
+    height: 100%;
+    background-color: #572828;
+    transition: width 0.5s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .recipe-card {
+      width: 90%;
+    }
+  
+    .recipe-title {
+      font-size: 1.5em;
+    }
+  }
+  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocolate Cake Recipe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="recipe-card">
+    <h1 class="recipe-title">Chocolate Cake</h1>
+    <img src="cake3" alt="Delicious Chocolate Cake" class="recipe-image">
+    <div class="recipe-details">
+      <p><strong>Preparation Time:</strong> 45 minutes</p>
+      <p><strong>Servings:</strong> 8</p>
+    </div>
+    <button id="toggle-ingredients" class="toggle-btn">Show Ingredients</button>
+    <ul class="ingredients hidden">
+      <li>2 cups of flour</li>
+      <li>1.5 cups of sugar</li>
+      <li>1 cup of cocoa powder</li>
+      <li>2 tsp of baking powder</li>
+      <li>1/2 tsp of salt</li>
+    </ul>
+    <button id="toggle-steps" class="toggle-btn">Show Steps</button>
+    <ol class="steps hidden">
+      <li>Preheat the oven to 350°F (175°C).</li>
+      <li>Mix the dry ingredients together.</li>
+      <li>Add wet ingredients and blend well.</li>
+      <li>Pour into a greased pan.</li>
+      <li>Bake for 30–35 minutes.</li>
+    </ol>
+    <button id="start-cooking" class="start-btn">Start Cooking</button>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
