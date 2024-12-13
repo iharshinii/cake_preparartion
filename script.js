@@ -15,15 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
         : "Hide Ingredients";
     });
   
-    // Toggle Steps
     stepsBtn.addEventListener("click", () => {
       stepsList.classList.toggle("hidden");
       stepsBtn.textContent = stepsList.classList.contains("hidden") 
         ? "Show Steps" 
         : "Hide Steps";
     });
-  
-    // Start Cooking
     startCookingBtn.addEventListener("click", () => {
       if (currentStep === 0) {
         stepsList.children[currentStep].classList.add("highlight");
